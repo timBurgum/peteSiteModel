@@ -1,0 +1,38 @@
+body {
+text-align: center;
+}
+h2{
+  display: block;
+  margin: 30px auto;
+}
+
+.background{
+
+}
+.title{
+  margin: 50px auto 10px auto;
+}
+.navbar{
+  margin-bottom: 20px;
+}
+.mainLogo{
+  width: 30%;
+}
+.containerMain{
+  margin: 30px auto;
+  background-image:url(backLogoTrans.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    width:700px;
+    height:700px;
+}
+.servicesPic{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+.listingsPic{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
