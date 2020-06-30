@@ -1,13 +1,63 @@
 body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin: 0;
 text-align: center;
 }
 h2{
   display: block;
   margin: 30px auto;
 }
+header{
+  height: 40px;
+  background: #124d60;
+}
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
 
-.background{
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 35px;
+  padding-top: 10px;
 
+  position: relative;
+
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+nav a:hover{
+  color: #363062;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+  width: 100%;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
 }
 .title{
   margin: 50px auto 10px auto;
@@ -16,23 +66,51 @@ h2{
   margin-bottom: 20px;
 }
 .mainLogo{
-  width: 30%;
+  width: 40%;
 }
+
 .containerMain{
   margin: 30px auto;
   background-image:url(backLogoTrans.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    width:700px;
-    height:700px;
+    height: 700px;
+    width: 60%;
 }
 .servicesPic{
+
   width: 25%;
   float: right;
   margin-left: 30px;
+  margin-bottom: 30px;
+
 }
 .listingsPic{
   width: 25%;
   float: left;
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+.aboutDiv{
+  display: block;
+  margin: 20px auto;
+
+}
+.servicesDiv{
+  display: block;
+  margin-top: 30px;
+
+}
+.listingsDiv{
+  display: block;
+
+}
+
+.space{
+  height: 18%;
+}
+
+
+.instagram-media{
+  text-align: center;
 }
