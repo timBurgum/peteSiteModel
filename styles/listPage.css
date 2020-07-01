@@ -1,0 +1,38 @@
+p{
+  font-size: 1.3em;
+}
+h4{
+  font-size: 1.5em;
+}
+
+
+.filters{
+  margin: 0 auto;
+  text-align: center;
+}
+.propertyFilter{
+display: inline-block;
+background: rgba(32, 210, 38, 0.5);
+}
+.filterSelection{
+  margin: 35px;
+}
+.propertyFilter:hover{
+  cursor: pointer;
+  background: rgba(32, 210, 38, 0.8);
+}
+
+
+
+.listing{
+
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  height: 400px;
+  width: 90%;
+  margin: 0 auto;
+}
+.propertyImage{
+  height: 95%;
+
+}
