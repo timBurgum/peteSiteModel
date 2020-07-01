@@ -33,6 +33,18 @@ background: rgba(32, 210, 38, 0.5);
   margin: 0 auto;
 }
 .propertyImage{
-  height: 95%;
 
+position: absolute;
+
+height: 90%;
+width: auto;
+
+}
+.propertyInfo{
+  background-color: white;
+
+}
+.img{
+  position: relative;
+  margin-bottom: 20px;
 }
