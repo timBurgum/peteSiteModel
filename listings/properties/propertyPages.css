@@ -1,0 +1,92 @@
+body {
+
+}
+.js .slider-single > div:nth-child(1n+2) { display: none }
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+section{
+  text-align: center;
+}
+p{
+  font-size: 1.2em;
+}
+h3 {
+	background: rgba(18, 76, 94, 0.5);
+	color: #3498db;
+	font-size: 2.25rem;
+	margin: .5rem;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}
+.slider-single h3 {
+	line-height: 10rem;
+}
+.slider-single img{
+  max-width: 50%;
+  max-height: 50%;
+}
+.slider-nav h3::before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+.slider-nav h3 span img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 900%;
+}
+.slider-nav .slick-slide { cursor: pointer; }
+.slick-slide.is-active h3 {
+	color: #c00;
+	background-color: #fff
+}
+.slick-slide img{
+  display: inline-block;
+}
+
+
+
+/*custom info*/
+
+hr {
+  margin: 10px auto;
+  border-style: none;
+  border-top: dotted;
+  border-color: grey;
+  border-width: 10px;
+  height: 0px;
+  width: 10%;
+}
+
+.propertyHolder{
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
+
+}
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Title Title Cost" "General-Info General-Info General-Info";
+  padding: 15px;
+}
+
+.Title { grid-area: Title; }
+
+.Cost {
+  grid-area: Cost;
+  padding-top: 25px;
+}
+
+.General-Info { grid-area: General-Info; }
