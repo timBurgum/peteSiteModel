@@ -1,11 +1,12 @@
-
-p{
+p {
   font-size: 1.3em;
 }
-h2{
+
+h2 {
   font-size: 1.8em;
 }
-hr{
+
+hr {
   border-style: none;
   border-top: dotted;
   border-color: grey;
@@ -14,36 +15,39 @@ hr{
   width: 10%;
 }
 
-
 /* Image slideshow */
-.bannerArea{
-width: 100%;
-height: 450px;
-margin-top:0px;
-z-index: -1;
-padding: 0;
+.bannerArea {
+  width: 100%;
+  height: 450px;
+  margin-top: 0px;
+  z-index: -1;
+  padding: 0;
 }
-.slidershow{
+
+.slidershow {
   top: 0;
   width: 100%;
   height: 450px;
   overflow: hidden;
   padding: 0;
 }
-.middle{
+
+.middle {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.navigation{
+
+.navigation {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
   display: flex;
 }
-.bar{
+
+.bar {
   width: 50px;
   height: 10px;
   border: 2px solid white;
@@ -51,43 +55,51 @@ padding: 0;
   cursor: pointer;
   transition: 0.6s;
 }
-.bar:hover{
+
+.bar:hover {
   background: rgba(255, 255, 255, 0.7);
 }
-input[name="r"]{
+
+input[name="r"] {
   position: absolute;
   visibility: hidden;
-
 }
-.slides{
+
+.slides {
   width: 400%;
   height: 100%;
   display: flex;
 }
-.slide{
+
+.slide {
   width: 25%;
   transition: 0.8s;
   position: sticky;
 }
-.slide img{
+
+.slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
-#r1:checked~.s1{
+
+#r1:checked~.s1 {
   margin-left: 0
 }
-#r2:checked~.s1{
+
+#r2:checked~.s1 {
   margin-left: -25%;
 }
-#r3:checked~.s1{
+
+#r3:checked~.s1 {
   margin-left: -50%;
 }
-#r4:checked~.s1{
+
+#r4:checked~.s1 {
   margin-left: -75%;
 }
 
 /* main content */
-.containerMain{
+.containerMain {
   text-align: center;
   position: relative;
   background-image: url("backLogoTrans.jpg");
@@ -96,38 +108,111 @@ input[name="r"]{
   background-attachment: fixed;
   width: 60%;
   margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
 }
-.homeBlurbs{
+
+.homeBlurbs {
   display: block;
 }
 
-.aboutLogo{
+.aboutLogo {
   float: left;
 }
-.listingsPic{
+
+.listingsPic {
   float: right;
 }
-.servicesPic{
-float: left;
+
+.servicesPic {
+  float: left;
 }
-.frontLogo{
+
+.frontLogo {
   width: 25%;
 }
 
+/* featured proper slider */
+
+.hero{
+
+  position: relative;
+  margin: 0 ;
+  padding: 0;
+  width: 100%;
+  height: 400px;
 
 
-/* footer */
-footer{
-background: rgba(32, 210, 38, 0.5);
-text-align: center;
-margin: 0;
-bottom: 0;
 }
-footer a{
-  font-size: 1.2em;
-  padding: 3em;
+.hero div{
+position: relative;
+height: 100%;
+width: auto;
+z-index: 999;
 }
-.footLinks{
-  margin-top: 15px;
-  padding: 15px;
+
+
+.featuredProperties{
+  max-height: 400px;
+  text-align: center;
+
+}
+
+  .sSlide {
+    height: 500px;
+    width: auto;
+    overflow: hidden;
+  }
+
+
+.banner1{
+  background-image: url("homeSlide/pic1.jpg");
+}
+.banner2{
+  background-image: url("homeSlide/pic2.jpg");
+}
+.banner3{
+  background-image: url("homeSlide/pic3.jpg");
+}
+.banner4{
+  background-image: url("homeSlide/pic4.jpg");
+}
+.banner5{
+  background-image: url("homeSlide/pic5.jpg");
+}
+.banner6{
+  background-image: url("homeSlide/pic6.jpg");
+}
+.banner7{
+  background-image: url("homeSlide/pic7.jpg");
+}
+.banner8{
+  background-image: url("homeSlide/pic8.jpg");
+}
+.banner9{
+  background-image: url("homeSlide/pic9.jpg");
+}
+.overlay{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(136, 165, 174, 0);
+  z-index: 999;
+}
+
+.overlay h2{
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.overlay p{
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
 }

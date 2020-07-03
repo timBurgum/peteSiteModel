@@ -1,2 +1,11 @@
+$('.hero').slick({
+  autoplay: true,
+  autoplaySpeed: 6000,
 
-var radioBTN = document.querySelectorAll("input");
+  dots: true,
+  infinite: true,
+  speed: 800,
+  fade: true,
+  cssEase: 'linear'
+
+});
