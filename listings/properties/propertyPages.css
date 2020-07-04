@@ -46,7 +46,10 @@ h3 {
 .slick-slide img{
   display: inline-block;
 }
+iframe{
 
+  height: 60em;
+}
 
 
 /*custom info*/
@@ -68,11 +71,6 @@ hr {
   padding: 0;
 
 }
-
-
-
-
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -88,5 +86,44 @@ hr {
   grid-area: Cost;
   padding-top: 25px;
 }
-
 .General-Info { grid-area: General-Info; }
+
+/*          Tabs             */
+.tabBar{
+  display: block;
+  width: 100%;
+  background: rgba(18, 76, 94, 0.5);
+}
+.tabs{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  .tabs li{
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  .tabSections{
+    margin: 0;
+    padding: 5%;
+    padding-top: 1%;
+  }
+  .tabs li:hover{
+    background-color: rgba(18, 76, 94, 0.8);
+    cursor: pointer;
+  }
+  .hidden{
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+  .chosenTab{
+    background-color: rgba(18, 76, 94, 0.8);
+  }
+
+  .infoSection p{
+    font-size: 1.5em;
+  }

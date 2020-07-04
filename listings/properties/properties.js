@@ -55,3 +55,40 @@ $('.slider-nav').on('click', '.slick-slide', function(event) {
 
  $('.slider-single').slick('slickGoTo', goToSingleSlide);
 });
+
+// **************Tab section*************** //
+var tabs = document.querySelectorAll(".tabs li");
+var infoSections = document.querySelectorAll(".infoSection");
+console.log(infoSections);
+for(var i = 0; i<tabs.length;i++)
+{
+  document.querySelectorAll(".tabs li")[i].addEventListener("click", function(e){
+    //remove colours for all tabs
+    for(var i = 0; i<tabs.length;i++)
+    {
+      document.querySelectorAll(".tabs li")[i].classList.remove('chosenTab');
+    }
+    //add colour to correct tab
+    this.classList.add('chosenTab');
+    // make correct sections acrive/hidden
+    //hide all sections
+    for(var n = 0; n<tabs.length;n++)
+    {
+      infoSections[n].classList.remove('active');
+      infoSections[n].classList.add('hidden');
+    }
+    //open up selected section
+    if(this.innerHTML == "Map")
+    {
+      infoSections[2].classList.add('active');
+    }
+    if(this.innerHTML == "Property Details")
+    {
+      infoSections[0].classList.add('active');
+    }
+    if(this.innerHTML == "Layout")
+    {
+      infoSections[1].classList.add('active');
+    }
+  });
+}
