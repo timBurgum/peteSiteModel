@@ -28,8 +28,12 @@ body{
   cursor: pointer;
 
 }
+.socialLogos-mobile{
+  display: none;
+}
 .mainLogo{
 display: block;
+
   height: 240px;
   margin: 0 auto;
   padding-left: 35px;
@@ -90,6 +94,15 @@ nav{
   body{
     overflow-x: hidden;
   }
+  .socialLogos{
+    display: none;
+      }
+      .socialLogos-mobile{
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        margin-bottom: 5px;
+      }
   .fix{
   position: static;
   }
@@ -100,7 +113,7 @@ nav{
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 240px;
+    top: 300px;
     background-color: rgb(18, 76, 94);
     display: flex;
     flex-direction: column;
