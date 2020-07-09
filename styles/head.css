@@ -94,6 +94,9 @@ nav{
   body{
     overflow-x: hidden;
   }
+    .mainLogo{
+    width: 100%;
+  }
   .socialLogos{
     display: none;
       }
