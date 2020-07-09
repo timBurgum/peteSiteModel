@@ -3,6 +3,10 @@ body{
   padding: 0;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   overflow-x: hidden;
+  background-image: url("../backLogoTrans.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Indroduction section */
@@ -11,13 +15,14 @@ body{
 }
 .socialLogos{
   position: absolute;
-  top: 30px;
+  top: 50px;
   width: 30%;
 
   }
 .socialLogo{
   display: block;
   width: 40px;
+  margin-top: 10px;
 }
 .socialLogo:hover{
   cursor: pointer;
@@ -33,60 +38,117 @@ display: block;
 
 
 /* Navigation Bar */
-header{
-  text-align: center;
-  height: 40px;
-  background: rgba(18, 76, 94, 0.5);
-}
 .fix{
   position: sticky;
   top: 0;
   z-index: 9999;
-
 }
-header::after{
-  content: '';
-  display: table;
-  clear: both;
-}
-
-nav ul{
-  margin: 0;
-  padding: 0;
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(18, 76, 94);
+  }
+  .logo{
+    letter-spacing: 5px;
+    font-size: 22px;
+    display: none;
+  }
+.nav-links{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
   list-style: none;
 }
-nav li{
-  display: inline-block;
-  margin-left: 35px;
-  padding-top: 10px;
-
-  position: relative;
-
-}
-nav a{
+.nav-links a{
   text-decoration: none;
-  color: black;
+  letter-spacing: 3px;
   font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1em;
+  color: white;
+  font-size: 15px;
 }
-nav a:hover{
-  color: #363062;
+.nav-links li{
+  transition: all 2.5s ease;
 }
-nav a::before{
-  content: '';
-  display: block;
-  height: 5px;
-  width: 0%;
+.nav-links li:hover{
+  border-bottom: 2px solid rgba(240, 240,240,0.6);
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
   background-color: black;
-  position: absolute;
-  top: 0;
+  transition: all 0.3s ease;
+}
+.burger{
+  display: none;
+}
 
-  transition: all ease-in-out 250ms;
+/* mobileView */
+@media screen and (max-width:800px) {
+  body{
+    overflow-x: hidden;
+  }
+  .fix{
+  position: static;
+  }
+  .logo{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 240px;
+    background-color: rgb(18, 76, 94);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li{
+    opacity: 0;
+
+  }
+
+  .burger{
+    display: block;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
 }
-nav a:hover::before{
-  width: 100%;
+.nav-active{
+  transform: translateX(0%);
 }
+/* navlinks animation */
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translate(50%);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
 
 
 
@@ -95,15 +157,28 @@ nav a:hover::before{
 
 /* footer */
 footer{
-background: rgba(18, 76, 94, 0.5);
+background: rgb(18, 76, 94);
 text-align: center;
 margin: 0;
 bottom: 0;
+margin-top: 20px;
+color: rgba(240, 240,240,1);
 }
+footer span{
+  font-weight: bold;
+
+}
+
 footer a{
-  font-size: 1.2em;
-  padding: 3em;
+  color: rgba(240, 240,240,1);
+  transition: all 2.5s ease;
+  text-decoration: none;
+  margin-top: 25px;
 }
+footer a:hover{
+  border-bottom: 2px solid rgba(240, 240,240,0.6);
+}
+
 .footLinks{
   margin-top: 15px;
   padding: 15px;

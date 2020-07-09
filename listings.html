@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>KJB Commercial Listings</title>
-<link rel="stylesheet" href="styles/head.css">
+  <link rel="stylesheet" href="styles/head.css">
   <link rel="stylesheet" href="styles/listPage.css">
 </head>
 
@@ -23,41 +23,46 @@
 
 
   <!-------------------- NAV bar   ---------------------->
-  <header class="fix">
-    <div class="container fix">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="listings.html">Listings</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="services.html">Services</a></li>
-        </ul>
-      </nav>
+  <nav class="fix">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="listings.html">Listings</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
-  </header>
+  </nav>
 
 
   <!-------------------- Main page html   ---------------------->
 <section class="filters">
   <h1>Available properties</h1>
-  <div class="propertyFilter">
+  <div class="propertyFilter" id="all">
     <h4 class="filterSelection">All</h4>
   </div>
-  <div class="propertyFilter">
+  <div class="propertyFilter" id="sale">
     <h4 class="filterSelection">For Sale</h4>
   </div>
-  <div class="propertyFilter">
+  <div class="propertyFilter" id="rent">
     <h4 class="filterSelection">To Rent</h4>
   </div>
 </section>
 
 <br>
+
   <section class="listing">
+  <h6 class = "rentSale">sale</h6>
     <div class="img">
       <a href="listings/properties/tempProperty1.html"><img class ="propertyImage" src="listings/tempProperty1/1.jpg" alt="Property Image"></a>
     </div>
       <div class="propertyInfo">
       <h4>Property Name</h4>
+
       <p>hasellus vel est vel magna ultricies pellentesque et nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean dui lectus, bibendum id ipsum at, aliquet fringilla leo. Orci varius natoque
         penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
         <h5>FOC</h5>
@@ -69,7 +74,9 @@
     </div>
   </section>
 <br>
-  <section class="listing">
+
+  <section class="listing hidden">
+    <h6 class = "rentSale">rent</h6>
     <div class="img">
       <img class ="propertyImage" src="listings/tempProperty2/1.jpg" alt="Property Image">
     </div>
@@ -85,7 +92,9 @@
     </div>
   </section>
 <br>
+
   <section class="listing">
+    <h6 class = "rentSale">sale</h6>
     <div class="img">
       <img class ="propertyImage" src="listings/tempProperty3/1.jpg" alt="Property Image">
     </div>
@@ -101,6 +110,24 @@
     </div>
   </section>
 
+<br>
+
+<section class="listing">
+  <h6 class = "rentSale">rent</h6>
+  <div class="img">
+    <img class ="propertyImage" src="listings/tempProperty3/1.jpg" alt="Property Image">
+  </div>
+  <div class="propertyInfo">
+    <h4>Property Name</h4>
+    <p>hasellus vel est vel magna ultricies pellentesque et nec libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean dui lectus, bibendum id ipsum at, aliquet fringilla leo. Orci varius natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+      <h5>FOC</h5>
+      <button class="propertyDetails" type="button" name="button">See more</button>
+  </div>
+  <div class="">
+<iframe width='100%' height='90%' id='mapcanvas' src='https://maps.google.com/maps?q=schindlers%20factory&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class="zxos8_gm"><a href="https://www.best-mattresses.uk/compared/simba-vs-emma/">emma mattress original reviewed</a></div><div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:100%;'></div></div><div><small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small></div></iframe>
+  </div>
+</section>
 
 
 
@@ -118,6 +145,9 @@
 <p><em>Copywright KJB Commercial 2020</em></p>
 
   </footer>
+
+  <script src="styles/nav.js" charset="utf-8"></script>
+  <script src="listings.js" charset="utf-8"></script>
 </body>
 
 </html>

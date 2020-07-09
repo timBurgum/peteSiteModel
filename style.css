@@ -164,7 +164,12 @@ z-index: 999;
     overflow: hidden;
   }
 
-
+.banner-glide{
+  transition: transform 2.5s ease;
+}
+.banner-glide:hover{
+  transform: skewY(40%);
+}
 .banner1{
   background-image: url("homeSlide/pic1.jpg");
 }

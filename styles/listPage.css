@@ -1,3 +1,6 @@
+body{
+
+}
 p{
   font-size: 1.3em;
 }
@@ -21,7 +24,13 @@ background: rgba(18, 76, 94, 0.5);
   cursor: pointer;
   background: rgba(18, 76, 94, 0.8);
 }
+.filerSelected{
+  background: rgba(18, 76, 94, 0.8);
+}
 
+.rentSale{
+  display: none;
+}
 
 
 .listing{
@@ -50,4 +59,11 @@ width: 90%;
 .img{
   position: relative;
   margin-bottom: 20px;
+}
+
+
+
+.hidden{
+
+  height: 0;
 }
