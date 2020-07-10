@@ -3,9 +3,7 @@ const navSlide = function(){
   const nav = document.querySelector(".nav-links");
   const navLinks = document.querySelectorAll(".nav-links li");
   const mainLogo = document.querySelectorAll(".mainLogo")[0];
-
-
-    burger.addEventListener("click", function(){
+  burger.addEventListener("click", function(){
     nav.classList.toggle("nav-active");
     //mainLogo.classList.toggle("new-logo-width");
     var logoDim = mainLogo.getBoundingClientRect();
@@ -23,11 +21,9 @@ const navSlide = function(){
           link.style.animation = `navLinkFade 0.5s ease forwards ${index/5 + 0.5}s`;
       }
     });
-
     //animate burger
     burger.classList.toggle("toggle");
   });
-
 };
 
 navSlide();

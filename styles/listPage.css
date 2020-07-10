@@ -8,7 +8,6 @@ h4{
   font-size: 1.5em;
 }
 
-
 .filters{
   margin: 0 auto;
   text-align: center;
@@ -32,7 +31,9 @@ background: rgba(18, 76, 94, 0.5);
   display: none;
 }
 
-
+.listings{
+  margin-bottom: 30px;
+}
 .listing{
 
   display: grid;
@@ -52,18 +53,39 @@ width: 90%;
 
 }
 .propertyInfo{
-  background-color: white;
+  background-color: none;
   padding: 15px;
-
+  margin: 0;
+  top:0;
+}
+.propertyInfo h4{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .img{
   position: relative;
   margin-bottom: 20px;
 }
-
-
-
 .hidden{
 
   height: 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+  .listing{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    height: auto;
+    width: 90%;
+    margin: 20px auto;
+
+    
+  }
 }
