@@ -6,9 +6,17 @@ const navSlide = function(){
   burger.addEventListener("click", function(){
     nav.classList.toggle("nav-active");
     //mainLogo.classList.toggle("new-logo-width");
-    var logoDim = mainLogo.getBoundingClientRect();
-    var navPosition = logoDim.height + 60;
-    nav.style.top = navPosition + "px";
+    //nav Position
+    // var logoDim = mainLogo.getBoundingClientRect();
+    // var navPosition = logoDim.height + 60;
+    // nav.style.top = navPosition + "px";
+
+    //test
+    var navPos = burger.getBoundingClientRect();
+    console.log(navPos);
+    nav.style.top = navPos.y + "px";
+    console.log(nav.style.top);
+
     //animate links incoming
 
     navLinks.forEach((link, index) => {

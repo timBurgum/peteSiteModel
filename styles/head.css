@@ -27,7 +27,8 @@ html {
 
 .socialLogo {
   display: block;
-  width: 40px;
+  width: 10%;
+  height: auto;
   margin-top: 10px;
 }
 
@@ -123,8 +124,15 @@ nav {
   .socialLogos-mobile {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    height: auto;
     background-color: white;
     margin-bottom: 5px;
+
+  }
+  .socialLogo img{
+    width: 10%;
+    height: auto;
   }
 
   .fix {
