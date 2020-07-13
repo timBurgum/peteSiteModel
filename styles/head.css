@@ -55,6 +55,10 @@ html {
   z-index: 9999;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -110,6 +114,13 @@ nav {
     overflow-x: hidden;
   }
 
+  .desktop-nav{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+  }
+
   .mainLogo {
     width: 100%;
     height: auto;
@@ -153,7 +164,7 @@ nav {
     flex-direction: column;
     align-items: center;
     z-index: 1000;
-    width: 40%;
+    width: 100%;
     margin: 0;
     padding: 0;
     transition: height 1s ease;
@@ -179,7 +190,7 @@ nav {
 
 .nav-active {
   transform: translateX(0%);
-  height: 92vh;
+  height: 100vh;
 }
 
 @keyframes navOpen {

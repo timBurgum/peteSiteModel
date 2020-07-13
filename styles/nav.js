@@ -12,10 +12,10 @@ const navSlide = function(){
     // nav.style.top = navPosition + "px";
 
     //test
-    var navPos = burger.getBoundingClientRect();
-    console.log(navPos);
-    nav.style.top = navPos.y + "px";
-    console.log(nav.style.top);
+    // var navPos = burger.getBoundingClientRect();
+    // console.log(navPos);
+    // nav.style.top = navPos.y + "px";
+    // console.log(nav.style.top);
 
     //animate links incoming
 
