@@ -23,6 +23,7 @@ html {
   position: absolute;
   top: 50px;
   width: 30%;
+
 }
 
 .socialLogo {
@@ -133,22 +134,21 @@ nav {
   }
 
   .socialLogos-mobile {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    margin-bottom: 5px;
+    display: block;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        text-align: center;
 
   }
   .socialLogo {
-    width: 10%;
-    height: auto;
-    margin: 10px;
-    max-width: 10vh;
-    max-height: 10vh;
-}
+    display: inline-block;
+        width: 20%;
+        height: auto;
+        padding: 5%;
+        margin: 0;
   }
+
 
 
   .fix {
