@@ -141,10 +141,12 @@ nav {
     margin-bottom: 5px;
 
   }
-  .socialLogo img{
+  .socialLogo {
     width: 10%;
     height: auto;
+    margin: 10px;
   }
+
 
   .fix {
     position: static;
