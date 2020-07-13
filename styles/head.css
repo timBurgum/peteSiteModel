@@ -145,6 +145,9 @@ nav {
     width: 10%;
     height: auto;
     margin: 10px;
+    max-width: 10vh;
+    max-height: 10vh;
+}
   }
 
 
